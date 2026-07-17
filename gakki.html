@@ -8,21 +8,410 @@
 <body style="user-select: none; -webkit-touch-callout: none; -webkit-user-select: none;">
 
 
-<br><br>
-<button id="btnB0" style="background-color: #d8a;">　　３　</button>
-<button id="btnB1" style="background-color: #db6;">　６．５</button>
-<button id="btnB2" style="background-color: #d8a;">　１０　</button>
-<button id="btnB3" style="background-color: #db6;">　１．５</button>
-<button id="btnB4" style="background-color: #d8a;">　　５　</button>
-<button id="btnB5" style="background-color: #db6;">　８．５</button>
-<button id="btnB6" style="background-color: #ddd;">　　０　</button>
-<button id="btnB7" style="background-color: #db6;">　３．５</button>
-<button id="btnB8" style="background-color: #d8a;">　　７　</button>
-<button id="btnB9" style="background-color: #db6;">１０．５</button>
-<button id="btnB10" style="background-color: #d8a;">　　２　</button>
-<button id="btnB11" style="background-color: #db6;">　５．５</button>
-<button id="btnB12" style="background-color: #d8a;">　　９　</button>
 
+
+
+
+<br>
+<button id="btnC0" style="background-color: #d8a;">　<br>　　３　<br>　</button>
+<button id="btnC1" style="background-color: #db6;">　<br>　６．５<br>　</button>
+<button id="btnC2" style="background-color: #d8a;">　<br>　１０　<br>　</button>
+<button id="btnC3" style="background-color: #db6;">　<br>　１．５<br>　</button>
+<button id="btnC4" style="background-color: #d8a;">　<br>　　５　<br>　</button>
+<button id="btnC5" style="background-color: #db6;">　<br>　８．５<br>　</button>
+<button id="btnC6" style="background-color: #ddd;">　<br>　　０　<br>　</button>
+<button id="btnC7" style="background-color: #db6;">　<br>　３．５<br>　</button>
+<button id="btnC8" style="background-color: #d8a;">　<br>　　７　<br>　</button>
+<button id="btnC9" style="background-color: #db6;">　<br>１０．５<br>　</button>
+<button id="btnC10" style="background-color: #d8a;">　<br>　　２　<br>　</button>
+<button id="btnC11" style="background-color: #db6;">　<br>　５．５<br>　</button>
+<button id="btnC12" style="background-color: #d8a;">　<br>　　９　<br>　</button>
+
+<audio id="seC0" src="kukeiha.mp3" loop></audio>
+<audio id="seC1" src="kukeiha.mp3" loop></audio>
+<audio id="seC2" src="kukeiha.mp3" loop></audio>
+<audio id="seC3" src="kukeiha.mp3" loop></audio>
+<audio id="seC4" src="kukeiha.mp3" loop></audio>
+<audio id="seC5" src="kukeiha.mp3" loop></audio>
+<audio id="seC6" src="kukeiha.mp3" loop></audio>
+<audio id="seC7" src="kukeiha.mp3" loop></audio>
+<audio id="seC8" src="kukeiha.mp3" loop></audio>
+<audio id="seC9" src="kukeiha.mp3" loop></audio>
+<audio id="seC10" src="kukeiha.mp3" loop></audio>
+<audio id="seC11" src="kukeiha.mp3" loop></audio>
+<audio id="seC12" src="kukeiha.mp3" loop></audio>
+
+<script>
+ const btnC0  = document.getElementById('btnC0');
+  const seC0   = document.getElementById('seC0');
+        seC0.playbackRate = (Math.sqrt(1.5))**(-6)*4;
+        seC0.preservesPitch = false;
+        seC0.loop = true;
+
+  // 押した瞬間に再生開始
+  btnC0.addEventListener('mousedown', async () => {
+    try {
+      await seC0.play();
+    } catch (e) {
+      console.error(e);
+    }
+  });
+
+  // 離したら停止
+  const stopC0 = () => {
+    seC0.pause();
+    seC0.currentTime = 0;
+  };
+  btnC0.addEventListener('mouseup', stopC0);
+  btnC0.addEventListener('mouseleave', stopC0); // 押したまま外に出たとき用
+  btnC0.addEventListener('touchstart', () => seC0.play());
+  btnC0.addEventListener('touchend',   stopC0);
+</script>
+
+<script>
+ const btnC1  = document.getElementById('btnC1');
+  const seC1   = document.getElementById('seC1');
+        seC1.playbackRate = (Math.sqrt(1.5))**(-5)*4;
+        seC1.preservesPitch = false;
+        seC1.loop = true;
+
+  // 押した瞬間に再生開始
+  btnC1.addEventListener('mousedown', async () => {
+    try {
+      await seC1.play();
+    } catch (e) {
+      console.error(e);
+    }
+  });
+
+  // 離したら停止
+  const stopC1 = () => {
+    seC1.pause();
+    seC1.currentTime = 0;
+  };
+  btnC1.addEventListener('mouseup', stopC1);
+  btnC1.addEventListener('mouseleave', stopC1); // 押したまま外に出たとき用
+  btnC1.addEventListener('touchstart', () => seC1.play());
+  btnC1.addEventListener('touchend',   stopC1);
+</script>
+
+<script>
+ const btnC2  = document.getElementById('btnC2');
+  const seC2   = document.getElementById('seC2');
+        seC2.playbackRate = (Math.sqrt(1.5))**(-4)*4;
+        seC2.preservesPitch = false;
+        seC2.loop = true;
+
+  // 押した瞬間に再生開始
+  btnC2.addEventListener('mousedown', async () => {
+    try {
+      await seC2.play();
+    } catch (e) {
+      console.error(e);
+    }
+  });
+
+  // 離したら停止
+  const stopC2 = () => {
+    seC2.pause();
+    seC2.currentTime = 0;
+  };
+  btnC2.addEventListener('mouseup', stopC2);
+  btnC2.addEventListener('mouseleave', stopC2); // 押したまま外に出たとき用
+  btnC2.addEventListener('touchstart', () => seC2.play());
+  btnC2.addEventListener('touchend',   stopC2);
+</script>
+
+<script>
+ const btnC3  = document.getElementById('btnC3');
+  const seC3   = document.getElementById('seC3');
+        seC3.playbackRate = (Math.sqrt(1.5))**(-3)*4;
+        seC3.preservesPitch = false;
+        seC3.loop = true;
+
+  // 押した瞬間に再生開始
+  btnC3.addEventListener('mousedown', async () => {
+    try {
+      await seC3.play();
+    } catch (e) {
+      console.error(e);
+    }
+  });
+
+  // 離したら停止
+  const stopC3 = () => {
+    seC3.pause();
+    seC3.currentTime = 0;
+  };
+  btnC3.addEventListener('mouseup', stopC3);
+  btnC3.addEventListener('mouseleave', stopC3); // 押したまま外に出たとき用
+  btnC3.addEventListener('touchstart', () => seC3.play());
+  btnC3.addEventListener('touchend',   stopC3);
+</script>
+
+<script>
+ const btnC4  = document.getElementById('btnC4');
+  const seC4   = document.getElementById('seC4');
+        seC4.playbackRate = (Math.sqrt(1.5))**(-2)*4;
+        seC4.preservesPitch = false;
+        seC4.loop = true;
+
+  // 押した瞬間に再生開始
+  btnC4.addEventListener('mousedown', async () => {
+    try {
+      await seC4.play();
+    } catch (e) {
+      console.error(e);
+    }
+  });
+
+  // 離したら停止
+  const stopC4 = () => {
+    seC4.pause();
+    seC4.currentTime = 0;
+  };
+  btnC4.addEventListener('mouseup', stopC4);
+  btnC4.addEventListener('mouseleave', stopC4); // 押したまま外に出たとき用
+  btnC4.addEventListener('touchstart', () => seC4.play());
+  btnC4.addEventListener('touchend',   stopC4);
+</script>
+
+<script>
+ const btnC5  = document.getElementById('btnC5');
+  const seC5   = document.getElementById('seC5');
+        seC5.playbackRate = (Math.sqrt(1.5))**(-1)*4;
+        seC5.preservesPitch = false;
+        seC5.loop = true;
+
+  // 押した瞬間に再生開始
+  btnC5.addEventListener('mousedown', async () => {
+    try {
+      await seC5.play();
+    } catch (e) {
+      console.error(e);
+    }
+  });
+
+  // 離したら停止
+  const stopC5 = () => {
+    seC5.pause();
+    seC5.currentTime = 0;
+  };
+  btnC5.addEventListener('mouseup', stopC5);
+  btnC5.addEventListener('mouseleave', stopC5); // 押したまま外に出たとき用
+  btnC5.addEventListener('touchstart', () => seC5.play());
+  btnC5.addEventListener('touchend',   stopC5);
+</script>
+
+<script>
+ const btnC6  = document.getElementById('btnC6');
+  const seC6   = document.getElementById('seC6');
+        seC6.playbackRate = (Math.sqrt(1.5))**(0)*4;
+        seC6.preservesPitch = false;
+        seC6.loop = true;
+
+  // 押した瞬間に再生開始
+  btnC6.addEventListener('mousedown', async () => {
+    try {
+      await seC6.play();
+    } catch (e) {
+      console.error(e);
+    }
+  });
+
+  // 離したら停止
+  const stopC6 = () => {
+    seC6.pause();
+    seC6.currentTime = 0;
+  };
+  btnC6.addEventListener('mouseup', stopC6);
+  btnC6.addEventListener('mouseleave', stopC6); // 押したまま外に出たとき用
+  btnC6.addEventListener('touchstart', () => seC6.play());
+  btnC6.addEventListener('touchend',   stopC6);
+</script>
+
+<script>
+ const btnC7  = document.getElementById('btnC7');
+  const seC7   = document.getElementById('seC7');
+        seC7.playbackRate = (Math.sqrt(1.5))**(1)*4;
+        seC7.preservesPitch = false;
+        seC7.loop = true;
+
+  // 押した瞬間に再生開始
+  btnC7.addEventListener('mousedown', async () => {
+    try {
+      await seC7.play();
+    } catch (e) {
+      console.error(e);
+    }
+  });
+
+  // 離したら停止
+  const stopC7 = () => {
+    seC7.pause();
+    seC7.currentTime = 0;
+  };
+  btnC7.addEventListener('mouseup', stopC7);
+  btnC7.addEventListener('mouseleave', stopC7); // 押したまま外に出たとき用
+  btnC7.addEventListener('touchstart', () => seC7.play());
+  btnC7.addEventListener('touchend',   stopC7);
+</script>
+
+<script>
+ const btnC8  = document.getElementById('btnC8');
+  const seC8   = document.getElementById('seC8');
+        seC8.playbackRate = (Math.sqrt(1.5))**(2)*4;
+        seC8.preservesPitch = false;
+        seC8.loop = true;
+
+  // 押した瞬間に再生開始
+  btnC8.addEventListener('mousedown', async () => {
+    try {
+      await seC8.play();
+    } catch (e) {
+      console.error(e);
+    }
+  });
+
+  // 離したら停止
+  const stopC8 = () => {
+    seC8.pause();
+    seC8.currentTime = 0;
+  };
+  btnC8.addEventListener('mouseup', stopC8);
+  btnC8.addEventListener('mouseleave', stopC8); // 押したまま外に出たとき用
+  btnC8.addEventListener('touchstart', () => seC8.play());
+  btnC8.addEventListener('touchend',   stopC8);
+</script>
+
+<script>
+ const btnC9  = document.getElementById('btnC9');
+  const seC9   = document.getElementById('seC9');
+        seC9.playbackRate = (Math.sqrt(1.5))**(3)*4;
+        seC9.preservesPitch = false;
+        seC9.loop = true;
+
+  // 押した瞬間に再生開始
+  btnC9.addEventListener('mousedown', async () => {
+    try {
+      await seC9.play();
+    } catch (e) {
+      console.error(e);
+    }
+  });
+
+  // 離したら停止
+  const stopC9 = () => {
+    seC9.pause();
+    seC9.currentTime = 0;
+  };
+  btnC9.addEventListener('mouseup', stopC9);
+  btnC9.addEventListener('mouseleave', stopC9); // 押したまま外に出たとき用
+  btnC9.addEventListener('touchstart', () => seC9.play());
+  btnC9.addEventListener('touchend',   stopC9);
+</script>
+
+<script>
+ const btnC10  = document.getElementById('btnC10');
+  const seC10   = document.getElementById('seC10');
+        seC10.playbackRate = (Math.sqrt(1.5))**(4)*4;
+        seC10.preservesPitch = false;
+        seC10.loop = true;
+
+  // 押した瞬間に再生開始
+  btnC10.addEventListener('mousedown', async () => {
+    try {
+      await seC10.play();
+    } catch (e) {
+      console.error(e);
+    }
+  });
+
+  // 離したら停止
+  const stopC10 = () => {
+    seC10.pause();
+    seC10.currentTime = 0;
+  };
+  btnC10.addEventListener('mouseup', stopC10);
+  btnC10.addEventListener('mouseleave', stopC10); // 押したまま外に出たとき用
+  btnC10.addEventListener('touchstart', () => seC10.play());
+  btnC10.addEventListener('touchend',   stopC10);
+</script>
+
+<script>
+ const btnC11  = document.getElementById('btnC11');
+  const seC11   = document.getElementById('seC11');
+        seC11.playbackRate = (Math.sqrt(1.5))**(5)*4;
+        seC11.preservesPitch = false;
+        seC11.loop = true;
+
+  // 押した瞬間に再生開始
+  btnC11.addEventListener('mousedown', async () => {
+    try {
+      await seC11.play();
+    } catch (e) {
+      console.error(e);
+    }
+  });
+
+  // 離したら停止
+  const stopC11 = () => {
+    seC11.pause();
+    seC11.currentTime = 0;
+  };
+  btnC11.addEventListener('mouseup', stopC11);
+  btnC11.addEventListener('mouseleave', stopC11); // 押したまま外に出たとき用
+  btnC11.addEventListener('touchstart', () => seC11.play());
+  btnC11.addEventListener('touchend',   stopC11);
+</script>
+
+<script>
+ const btnC12  = document.getElementById('btnC12');
+  const seC12   = document.getElementById('seC12');
+        seC12.playbackRate = (Math.sqrt(1.5))**(6)*4;
+        seC12.preservesPitch = false;
+        seC12.loop = true;
+
+  // 押した瞬間に再生開始
+  btnC12.addEventListener('mousedown', async () => {
+    try {
+      await seC12.play();
+    } catch (e) {
+      console.error(e);
+    }
+  });
+
+  // 離したら停止
+  const stopC12 = () => {
+    seC12.pause();
+    seC12.currentTime = 0;
+  };
+  btnC12.addEventListener('mouseup', stopC12);
+  btnC12.addEventListener('mouseleave', stopC12); // 押したまま外に出たとき用
+  btnC12.addEventListener('touchstart', () => seC12.play());
+  btnC12.addEventListener('touchend',   stopC12);
+</script>
+
+
+
+
+
+
+
+<br>
+<button id="btnB0" style="background-color: #d8a;">　<br>　　３　<br>　</button>
+<button id="btnB1" style="background-color: #db6;">　<br>　６．５<br>　</button>
+<button id="btnB2" style="background-color: #d8a;">　<br>　１０　<br>　</button>
+<button id="btnB3" style="background-color: #db6;">　<br>　１．５<br>　</button>
+<button id="btnB4" style="background-color: #d8a;">　<br>　　５　<br>　</button>
+<button id="btnB5" style="background-color: #db6;">　<br>　８．５<br>　</button>
+<button id="btnB6" style="background-color: #ddd;">　<br>　　０　<br>　</button>
+<button id="btnB7" style="background-color: #db6;">　<br>　３．５<br>　</button>
+<button id="btnB8" style="background-color: #d8a;">　<br>　　７　<br>　</button>
+<button id="btnB9" style="background-color: #db6;">　<br>１０．５<br>　</button>
+<button id="btnB10" style="background-color: #d8a;">　<br>　　２　<br>　</button>
+<button id="btnB11" style="background-color: #db6;">　<br>　５．５<br>　</button>
+<button id="btnB12" style="background-color: #d8a;">　<br>　　９　<br>　</button>
 
 <audio id="seB0" src="kukeiha.mp3" loop></audio>
 <audio id="seB1" src="kukeiha.mp3" loop></audio>
@@ -416,20 +805,20 @@
 
 
 
-<br><br>
-<button id="btn0" style="background-color: #d8a;">　　３　</button>
-<button id="btn1" style="background-color: #db6;">　６．５</button>
-<button id="btn2" style="background-color: #d8a;">　１０　</button>
-<button id="btn3" style="background-color: #db6;">　１．５</button>
-<button id="btn4" style="background-color: #d8a;">　　５　</button>
-<button id="btn5" style="background-color: #db6;">　８．５</button>
-<button id="btn6" style="background-color: #ddd;">　　０　</button>
-<button id="btn7" style="background-color: #db6;">　３．５</button>
-<button id="btn8" style="background-color: #d8a;">　　７　</button>
-<button id="btn9" style="background-color: #db6;">１０．５</button>
-<button id="btn10" style="background-color: #d8a;">　　２　</button>
-<button id="btn11" style="background-color: #db6;">　５．５</button>
-<button id="btn12" style="background-color: #d8a;">　　９　</button>
+<br>
+<button id="btn0" style="background-color: #d8a;">　<br>　　３　<br>　</button>
+<button id="btn1" style="background-color: #db6;">　<br>　６．５<br>　</button>
+<button id="btn2" style="background-color: #d8a;">　<br>　１０　<br>　</button>
+<button id="btn3" style="background-color: #db6;">　<br>　１．５<br>　</button>
+<button id="btn4" style="background-color: #d8a;">　<br>　　５　<br>　</button>
+<button id="btn5" style="background-color: #db6;">　<br>　８．５<br>　</button>
+<button id="btn6" style="background-color: #ddd;">　<br>　　０　<br>　</button>
+<button id="btn7" style="background-color: #db6;">　<br>　３．５<br>　</button>
+<button id="btn8" style="background-color: #d8a;">　<br>　　７　<br>　</button>
+<button id="btn9" style="background-color: #db6;">　<br>１０．５<br>　</button>
+<button id="btn10" style="background-color: #d8a;">　<br>　　２　<br>　</button>
+<button id="btn11" style="background-color: #db6;">　<br>　５．５<br>　</button>
+<button id="btn12" style="background-color: #d8a;">　<br>　　９　<br>　</button>
 
 
 <audio id="se0" src="kukeiha.mp3" loop></audio>
@@ -803,20 +1192,20 @@
 
 
 
-<br><br>
-<button id="btnA0" style="background-color: #d8a;">　　３　</button>
-<button id="btnA1" style="background-color: #db6;">　６．５</button>
-<button id="btnA2" style="background-color: #d8a;">　１０　</button>
-<button id="btnA3" style="background-color: #db6;">　１．５</button>
-<button id="btnA4" style="background-color: #d8a;">　　５　</button>
-<button id="btnA5" style="background-color: #db6;">　８．５</button>
-<button id="btnA6" style="background-color: #ddd;">　　０　</button>
-<button id="btnA7" style="background-color: #db6;">　３．５</button>
-<button id="btnA8" style="background-color: #d8a;">　　７　</button>
-<button id="btnA9" style="background-color: #db6;">１０．５</button>
-<button id="btnA10" style="background-color: #d8a;">　　２　</button>
-<button id="btnA11" style="background-color: #db6;">　５．５</button>
-<button id="btnA12" style="background-color: #d8a;">　　９　</button>
+<br>
+<button id="btnA0" style="background-color: #d8a;">　<br>　　３　<br>　</button>
+<button id="btnA1" style="background-color: #db6;">　<br>　６．５<br>　</button>
+<button id="btnA2" style="background-color: #d8a;">　<br>　１０　<br>　</button>
+<button id="btnA3" style="background-color: #db6;">　<br>　１．５<br>　</button>
+<button id="btnA4" style="background-color: #d8a;">　<br>　　５　<br>　</button>
+<button id="btnA5" style="background-color: #db6;">　<br>　８．５<br>　</button>
+<button id="btnA6" style="background-color: #ddd;">　<br>　　０　<br>　</button>
+<button id="btnA7" style="background-color: #db6;">　<br>　３．５<br>　</button>
+<button id="btnA8" style="background-color: #d8a;">　<br>　　７　<br>　</button>
+<button id="btnA9" style="background-color: #db6;">　<br>１０．５<br>　</button>
+<button id="btnA10" style="background-color: #d8a;">　<br>　　２　<br>　</button>
+<button id="btnA11" style="background-color: #db6;">　<br>　５．５<br>　</button>
+<button id="btnA12" style="background-color: #d8a;">　<br>　　９　<br>　</button>
 
 
 <audio id="seA0" src="kukeiha.mp3" loop></audio>
