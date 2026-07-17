@@ -1,0 +1,1442 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+
+<br><br>
+<button id="btnB0" style="background-color: #d8a;">　　３　</button>
+<button id="btnB1" style="background-color: #db6;">　６．５</button>
+<button id="btnB2" style="background-color: #d8a;">　１０　</button>
+<button id="btnB3" style="background-color: #db6;">　１．５</button>
+<button id="btnB4" style="background-color: #d8a;">　　５　</button>
+<button id="btnB5" style="background-color: #db6;">　８．５</button>
+<button id="btnB6" style="background-color: #ddd;">　　０　</button>
+<button id="btnB7" style="background-color: #db6;">　３．５</button>
+<button id="btnB8" style="background-color: #d8a;">　　７　</button>
+<button id="btnB9" style="background-color: #db6;">１０．５</button>
+<button id="btnB10" style="background-color: #d8a;">　　２　</button>
+<button id="btnB11" style="background-color: #db6;">　５．５</button>
+<button id="btnB12" style="background-color: #d8a;">　　９　</button>
+
+
+<audio id="seB0" src="kukeiha.mp3" loop></audio>
+<audio id="seB1" src="kukeiha.mp3" loop></audio>
+<audio id="seB2" src="kukeiha.mp3" loop></audio>
+<audio id="seB3" src="kukeiha.mp3" loop></audio>
+<audio id="seB4" src="kukeiha.mp3" loop></audio>
+<audio id="seB5" src="kukeiha.mp3" loop></audio>
+<audio id="seB6" src="kukeiha.mp3" loop></audio>
+<audio id="seB7" src="kukeiha.mp3" loop></audio>
+<audio id="seB8" src="kukeiha.mp3" loop></audio>
+<audio id="seB9" src="kukeiha.mp3" loop></audio>
+<audio id="seB10" src="kukeiha.mp3" loop></audio>
+<audio id="seB11" src="kukeiha.mp3" loop></audio>
+<audio id="seB12" src="kukeiha.mp3" loop></audio>
+
+
+
+
+<script>
+ const btnB0  = document.getElementById('btnB0');
+  const seB0   = document.getElementById('seB0');
+        seB0.playbackRate = (Math.sqrt(1.5))**(-6)*2;
+        seB0.preservesPitch = false;
+        seB0.loop = true;
+
+  // 押した瞬間に再生開始
+  btnB0.addEventListener('mousedown', async () => {
+    try {
+      await seB0.play();
+    } catch (e) {
+      console.error(e);
+    }
+  });
+
+  // 離したら停止
+  const stopB0 = () => {
+    seB0.pause();
+    seB0.currentTime = 0;
+  };
+  btnB0.addEventListener('mouseup', stopB0);
+  btnB0.addEventListener('mouseleave', stopB0); // 押したまま外に出たとき用
+  btnB0.addEventListener('touchstart', () => seB0.play());
+  btnB0.addEventListener('touchend',   stopB0);
+</script>
+
+<script>
+ const btnB1  = document.getElementById('btnB1');
+  const seB1   = document.getElementById('seB1');
+        seB1.playbackRate = (Math.sqrt(1.5))**(-5)*2;
+        seB1.preservesPitch = false;
+        seB1.loop = true;
+
+  // 押した瞬間に再生開始
+  btnB1.addEventListener('mousedown', async () => {
+    try {
+      await seB1.play();
+    } catch (e) {
+      console.error(e);
+    }
+  });
+
+  // 離したら停止
+  const stopB1 = () => {
+    seB1.pause();
+    seB1.currentTime = 0;
+  };
+  btnB1.addEventListener('mouseup', stopB1);
+  btnB1.addEventListener('mouseleave', stopB1); // 押したまま外に出たとき用
+  btnB1.addEventListener('touchstart', () => seB1.play());
+  btnB1.addEventListener('touchend',   stopB1);
+</script>
+
+<script>
+ const btnB2  = document.getElementById('btnB2');
+  const seB2   = document.getElementById('seB2');
+        seB2.playbackRate = (Math.sqrt(1.5))**(-4)*2;
+        seB2.preservesPitch = false;
+        seB2.loop = true;
+
+  // 押した瞬間に再生開始
+  btnB2.addEventListener('mousedown', async () => {
+    try {
+      await seB2.play();
+    } catch (e) {
+      console.error(e);
+    }
+  });
+
+  // 離したら停止
+  const stopB2 = () => {
+    seB2.pause();
+    seB2.currentTime = 0;
+  };
+  btnB2.addEventListener('mouseup', stopB2);
+  btnB2.addEventListener('mouseleave', stopB2); // 押したまま外に出たとき用
+  btnB2.addEventListener('touchstart', () => seB2.play());
+  btnB2.addEventListener('touchend',   stopB2);
+</script>
+
+<script>
+ const btnB3  = document.getElementById('btnB3');
+  const seB3   = document.getElementById('seB3');
+        seB3.playbackRate = (Math.sqrt(1.5))**(-3)*2;
+        seB3.preservesPitch = false;
+        seB3.loop = true;
+
+  // 押した瞬間に再生開始
+  btnB3.addEventListener('mousedown', async () => {
+    try {
+      await seB3.play();
+    } catch (e) {
+      console.error(e);
+    }
+  });
+
+  // 離したら停止
+  const stopB3 = () => {
+    seB3.pause();
+    seB3.currentTime = 0;
+  };
+  btnB3.addEventListener('mouseup', stopB3);
+  btnB3.addEventListener('mouseleave', stopB3); // 押したまま外に出たとき用
+  btnB3.addEventListener('touchstart', () => seB3.play());
+  btnB3.addEventListener('touchend',   stopB3);
+</script>
+
+<script>
+ const btnB4  = document.getElementById('btnB4');
+  const seB4   = document.getElementById('seB4');
+        seB4.playbackRate = (Math.sqrt(1.5))**(-2)*2;
+        seB4.preservesPitch = false;
+        seB4.loop = true;
+
+  // 押した瞬間に再生開始
+  btnB4.addEventListener('mousedown', async () => {
+    try {
+      await seB4.play();
+    } catch (e) {
+      console.error(e);
+    }
+  });
+
+  // 離したら停止
+  const stopB4 = () => {
+    seB4.pause();
+    seB4.currentTime = 0;
+  };
+  btnB4.addEventListener('mouseup', stopB4);
+  btnB4.addEventListener('mouseleave', stopB4); // 押したまま外に出たとき用
+  btnB4.addEventListener('touchstart', () => seB4.play());
+  btnB4.addEventListener('touchend',   stopB4);
+</script>
+
+<script>
+ const btnB5  = document.getElementById('btnB5');
+  const seB5   = document.getElementById('seB5');
+        seB5.playbackRate = (Math.sqrt(1.5))**(-1)*2;
+        seB5.preservesPitch = false;
+        seB5.loop = true;
+
+  // 押した瞬間に再生開始
+  btnB5.addEventListener('mousedown', async () => {
+    try {
+      await seB5.play();
+    } catch (e) {
+      console.error(e);
+    }
+  });
+
+  // 離したら停止
+  const stopB5 = () => {
+    seB5.pause();
+    seB5.currentTime = 0;
+  };
+  btnB5.addEventListener('mouseup', stopB5);
+  btnB5.addEventListener('mouseleave', stopB5); // 押したまま外に出たとき用
+  btnB5.addEventListener('touchstart', () => seB5.play());
+  btnB5.addEventListener('touchend',   stopB5);
+</script>
+
+<script>
+ const btnB6  = document.getElementById('btnB6');
+  const seB6   = document.getElementById('seB6');
+        seB6.playbackRate = (Math.sqrt(1.5))**(0)*2;
+        seB6.preservesPitch = false;
+        seB6.loop = true;
+
+  // 押した瞬間に再生開始
+  btnB6.addEventListener('mousedown', async () => {
+    try {
+      await seB6.play();
+    } catch (e) {
+      console.error(e);
+    }
+  });
+
+  // 離したら停止
+  const stopB6 = () => {
+    seB6.pause();
+    seB6.currentTime = 0;
+  };
+  btnB6.addEventListener('mouseup', stopB6);
+  btnB6.addEventListener('mouseleave', stopB6); // 押したまま外に出たとき用
+  btnB6.addEventListener('touchstart', () => seB6.play());
+  btnB6.addEventListener('touchend',   stopB6);
+</script>
+
+<script>
+ const btnB7  = document.getElementById('btnB7');
+  const seB7   = document.getElementById('seB7');
+        seB7.playbackRate = (Math.sqrt(1.5))**(1)*2;
+        seB7.preservesPitch = false;
+        seB7.loop = true;
+
+  // 押した瞬間に再生開始
+  btnB7.addEventListener('mousedown', async () => {
+    try {
+      await seB7.play();
+    } catch (e) {
+      console.error(e);
+    }
+  });
+
+  // 離したら停止
+  const stopB7 = () => {
+    seB7.pause();
+    seB7.currentTime = 0;
+  };
+  btnB7.addEventListener('mouseup', stopB7);
+  btnB7.addEventListener('mouseleave', stopB7); // 押したまま外に出たとき用
+  btnB7.addEventListener('touchstart', () => seB7.play());
+  btnB7.addEventListener('touchend',   stopB7);
+</script>
+
+<script>
+ const btnB8  = document.getElementById('btnB8');
+  const seB8   = document.getElementById('seB8');
+        seB8.playbackRate = (Math.sqrt(1.5))**(2)*2;
+        seB8.preservesPitch = false;
+        seB8.loop = true;
+
+  // 押した瞬間に再生開始
+  btnB8.addEventListener('mousedown', async () => {
+    try {
+      await seB8.play();
+    } catch (e) {
+      console.error(e);
+    }
+  });
+
+  // 離したら停止
+  const stopB8 = () => {
+    seB8.pause();
+    seB8.currentTime = 0;
+  };
+  btnB8.addEventListener('mouseup', stopB8);
+  btnB8.addEventListener('mouseleave', stopB8); // 押したまま外に出たとき用
+  btnB8.addEventListener('touchstart', () => seB8.play());
+  btnB8.addEventListener('touchend',   stopB8);
+</script>
+
+<script>
+ const btnB9  = document.getElementById('btnB9');
+  const seB9   = document.getElementById('seB9');
+        seB9.playbackRate = (Math.sqrt(1.5))**(3)*2;
+        seB9.preservesPitch = false;
+        seB9.loop = true;
+
+  // 押した瞬間に再生開始
+  btnB9.addEventListener('mousedown', async () => {
+    try {
+      await seB9.play();
+    } catch (e) {
+      console.error(e);
+    }
+  });
+
+  // 離したら停止
+  const stopB9 = () => {
+    seB9.pause();
+    seB9.currentTime = 0;
+  };
+  btnB9.addEventListener('mouseup', stopB9);
+  btnB9.addEventListener('mouseleave', stopB9); // 押したまま外に出たとき用
+  btnB9.addEventListener('touchstart', () => seB9.play());
+  btnB9.addEventListener('touchend',   stopB9);
+</script>
+
+<script>
+ const btnB10  = document.getElementById('btnB10');
+  const seB10   = document.getElementById('seB10');
+        seB10.playbackRate = (Math.sqrt(1.5))**(4)*2;
+        seB10.preservesPitch = false;
+        seB10.loop = true;
+
+  // 押した瞬間に再生開始
+  btnB10.addEventListener('mousedown', async () => {
+    try {
+      await seB10.play();
+    } catch (e) {
+      console.error(e);
+    }
+  });
+
+  // 離したら停止
+  const stopB10 = () => {
+    seB10.pause();
+    seB10.currentTime = 0;
+  };
+  btnB10.addEventListener('mouseup', stopB10);
+  btnB10.addEventListener('mouseleave', stopB10); // 押したまま外に出たとき用
+  btnB10.addEventListener('touchstart', () => seB10.play());
+  btnB10.addEventListener('touchend',   stopB10);
+</script>
+
+<script>
+ const btnB11  = document.getElementById('btnB11');
+  const seB11   = document.getElementById('seB11');
+        seB11.playbackRate = (Math.sqrt(1.5))**(5)*2;
+        seB11.preservesPitch = false;
+        seB11.loop = true;
+
+  // 押した瞬間に再生開始
+  btnB11.addEventListener('mousedown', async () => {
+    try {
+      await seB11.play();
+    } catch (e) {
+      console.error(e);
+    }
+  });
+
+  // 離したら停止
+  const stopB11 = () => {
+    seB11.pause();
+    seB11.currentTime = 0;
+  };
+  btnB11.addEventListener('mouseup', stopB11);
+  btnB11.addEventListener('mouseleave', stopB11); // 押したまま外に出たとき用
+  btnB11.addEventListener('touchstart', () => seB11.play());
+  btnB11.addEventListener('touchend',   stopB11);
+</script>
+
+<script>
+ const btnB12  = document.getElementById('btnB12');
+  const seB12   = document.getElementById('seB12');
+        seB12.playbackRate = (Math.sqrt(1.5))**(6)*2;
+        seB12.preservesPitch = false;
+        seB12.loop = true;
+
+  // 押した瞬間に再生開始
+  btnB12.addEventListener('mousedown', async () => {
+    try {
+      await seB12.play();
+    } catch (e) {
+      console.error(e);
+    }
+  });
+
+  // 離したら停止
+  const stopB12 = () => {
+    seB12.pause();
+    seB12.currentTime = 0;
+  };
+  btnB12.addEventListener('mouseup', stopB12);
+  btnB12.addEventListener('mouseleave', stopB12); // 押したまま外に出たとき用
+  btnB12.addEventListener('touchstart', () => seB12.play());
+  btnB12.addEventListener('touchend',   stopB12);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br>
+<button id="btn0" style="background-color: #d8a;">　　３　</button>
+<button id="btn1" style="background-color: #db6;">　６．５</button>
+<button id="btn2" style="background-color: #d8a;">　１０　</button>
+<button id="btn3" style="background-color: #db6;">　１．５</button>
+<button id="btn4" style="background-color: #d8a;">　　５　</button>
+<button id="btn5" style="background-color: #db6;">　８．５</button>
+<button id="btn6" style="background-color: #ddd;">　　０　</button>
+<button id="btn7" style="background-color: #db6;">　３．５</button>
+<button id="btn8" style="background-color: #d8a;">　　７　</button>
+<button id="btn9" style="background-color: #db6;">１０．５</button>
+<button id="btn10" style="background-color: #d8a;">　　２　</button>
+<button id="btn11" style="background-color: #db6;">　５．５</button>
+<button id="btn12" style="background-color: #d8a;">　　９　</button>
+
+
+<audio id="se0" src="kukeiha.mp3" loop></audio>
+<audio id="se1" src="kukeiha.mp3" loop></audio>
+<audio id="se2" src="kukeiha.mp3" loop></audio>
+<audio id="se3" src="kukeiha.mp3" loop></audio>
+<audio id="se4" src="kukeiha.mp3" loop></audio>
+<audio id="se5" src="kukeiha.mp3" loop></audio>
+<audio id="se6" src="kukeiha.mp3" loop></audio>
+<audio id="se7" src="kukeiha.mp3" loop></audio>
+<audio id="se8" src="kukeiha.mp3" loop></audio>
+<audio id="se9" src="kukeiha.mp3" loop></audio>
+<audio id="se10" src="kukeiha.mp3" loop></audio>
+<audio id="se11" src="kukeiha.mp3" loop></audio>
+<audio id="se12" src="kukeiha.mp3" loop></audio>
+
+<script>
+ const btn0  = document.getElementById('btn0');
+  const se0   = document.getElementById('se0');
+        se0.playbackRate = (Math.sqrt(1.5))**(-6);
+        se0.preservesPitch = false;
+        se0.loop = true;
+
+  // 押した瞬間に再生開始
+  btn0.addEventListener('mousedown', async () => {
+    try {
+      await se0.play();
+    } catch (e) {
+      console.error(e);
+    }
+  });
+
+  // 離したら停止
+  const stop0 = () => {
+    se0.pause();
+    se0.currentTime = 0;
+  };
+  btn0.addEventListener('mouseup', stop0);
+  btn0.addEventListener('mouseleave', stop0); // 押したまま外に出たとき用
+  btn0.addEventListener('touchstart', () => se0.play());
+  btn0.addEventListener('touchend',   stop0);
+</script>
+
+<script>
+ const btn1  = document.getElementById('btn1');
+  const se1   = document.getElementById('se1');
+        se1.playbackRate = (Math.sqrt(1.5))**(-5);
+        se1.preservesPitch = false;
+        se1.loop = true;
+
+  // 押した瞬間に再生開始
+  btn1.addEventListener('mousedown', async () => {
+    try {
+      await se1.play();
+    } catch (e) {
+      console.error(e);
+    }
+  });
+
+  // 離したら停止
+  const stop1 = () => {
+    se1.pause();
+    se1.currentTime = 0;
+  };
+  btn1.addEventListener('mouseup', stop1);
+  btn1.addEventListener('mouseleave', stop1); // 押したまま外に出たとき用
+  btn1.addEventListener('touchstart', () => se1.play());
+  btn1.addEventListener('touchend',   stop1);
+</script>
+
+<script>
+ const btn2  = document.getElementById('btn2');
+  const se2   = document.getElementById('se2');
+        se2.playbackRate = (Math.sqrt(1.5))**(-4);
+        se2.preservesPitch = false;
+        se2.loop = true;
+
+  // 押した瞬間に再生開始
+  btn2.addEventListener('mousedown', async () => {
+    try {
+      await se2.play();
+    } catch (e) {
+      console.error(e);
+    }
+  });
+
+  // 離したら停止
+  const stop2 = () => {
+    se2.pause();
+    se2.currentTime = 0;
+  };
+  btn2.addEventListener('mouseup', stop2);
+  btn2.addEventListener('mouseleave', stop2); // 押したまま外に出たとき用
+  btn2.addEventListener('touchstart', () => se2.play());
+  btn2.addEventListener('touchend',   stop2);
+</script>
+
+<script>
+ const btn3  = document.getElementById('btn3');
+  const se3   = document.getElementById('se3');
+        se3.playbackRate = (Math.sqrt(1.5))**(-3);
+        se3.preservesPitch = false;
+        se3.loop = true;
+
+  // 押した瞬間に再生開始
+  btn3.addEventListener('mousedown', async () => {
+    try {
+      await se3.play();
+    } catch (e) {
+      console.error(e);
+    }
+  });
+
+  // 離したら停止
+  const stop3 = () => {
+    se3.pause();
+    se3.currentTime = 0;
+  };
+  btn3.addEventListener('mouseup', stop3);
+  btn3.addEventListener('mouseleave', stop3); // 押したまま外に出たとき用
+  btn3.addEventListener('touchstart', () => se3.play());
+  btn3.addEventListener('touchend',   stop3);
+</script>
+
+<script>
+ const btn4  = document.getElementById('btn4');
+  const se4   = document.getElementById('se4');
+        se4.playbackRate = (Math.sqrt(1.5))**(-2);
+        se4.preservesPitch = false;
+        se4.loop = true;
+
+  // 押した瞬間に再生開始
+  btn4.addEventListener('mousedown', async () => {
+    try {
+      await se4.play();
+    } catch (e) {
+      console.error(e);
+    }
+  });
+
+  // 離したら停止
+  const stop4 = () => {
+    se4.pause();
+    se4.currentTime = 0;
+  };
+  btn4.addEventListener('mouseup', stop4);
+  btn4.addEventListener('mouseleave', stop4); // 押したまま外に出たとき用
+  btn4.addEventListener('touchstart', () => se4.play());
+  btn4.addEventListener('touchend',   stop4);
+</script>
+
+<script>
+ const btn5  = document.getElementById('btn5');
+  const se5   = document.getElementById('se5');
+        se5.playbackRate = (Math.sqrt(1.5))**(-1);
+        se5.preservesPitch = false;
+        se5.loop = true;
+
+  // 押した瞬間に再生開始
+  btn5.addEventListener('mousedown', async () => {
+    try {
+      await se5.play();
+    } catch (e) {
+      console.error(e);
+    }
+  });
+
+  // 離したら停止
+  const stop5 = () => {
+    se5.pause();
+    se5.currentTime = 0;
+  };
+  btn5.addEventListener('mouseup', stop5);
+  btn5.addEventListener('mouseleave', stop5); // 押したまま外に出たとき用
+  btn5.addEventListener('touchstart', () => se5.play());
+  btn5.addEventListener('touchend',   stop5);
+</script>
+
+<script>
+ const btn6  = document.getElementById('btn6');
+  const se6   = document.getElementById('se6');
+        se6.playbackRate = (Math.sqrt(1.5))**(0);
+        se6.preservesPitch = false;
+        se6.loop = true;
+
+  // 押した瞬間に再生開始
+  btn6.addEventListener('mousedown', async () => {
+    try {
+      await se6.play();
+    } catch (e) {
+      console.error(e);
+    }
+  });
+
+  // 離したら停止
+  const stop6 = () => {
+    se6.pause();
+    se6.currentTime = 0;
+  };
+  btn6.addEventListener('mouseup', stop6);
+  btn6.addEventListener('mouseleave', stop6); // 押したまま外に出たとき用
+  btn6.addEventListener('touchstart', () => se6.play());
+  btn6.addEventListener('touchend',   stop6);
+</script>
+
+<script>
+ const btn7  = document.getElementById('btn7');
+  const se7   = document.getElementById('se7');
+        se7.playbackRate = (Math.sqrt(1.5))**(1);
+        se7.preservesPitch = false;
+        se7.loop = true;
+
+  // 押した瞬間に再生開始
+  btn7.addEventListener('mousedown', async () => {
+    try {
+      await se7.play();
+    } catch (e) {
+      console.error(e);
+    }
+  });
+
+  // 離したら停止
+  const stop7 = () => {
+    se7.pause();
+    se7.currentTime = 0;
+  };
+  btn7.addEventListener('mouseup', stop7);
+  btn7.addEventListener('mouseleave', stop7); // 押したまま外に出たとき用
+  btn7.addEventListener('touchstart', () => se7.play());
+  btn7.addEventListener('touchend',   stop7);
+</script>
+
+<script>
+ const btn8  = document.getElementById('btn8');
+  const se8   = document.getElementById('se8');
+        se8.playbackRate = (Math.sqrt(1.5))**(2);
+        se8.preservesPitch = false;
+        se8.loop = true;
+
+  // 押した瞬間に再生開始
+  btn8.addEventListener('mousedown', async () => {
+    try {
+      await se8.play();
+    } catch (e) {
+      console.error(e);
+    }
+  });
+
+  // 離したら停止
+  const stop8 = () => {
+    se8.pause();
+    se8.currentTime = 0;
+  };
+  btn8.addEventListener('mouseup', stop8);
+  btn8.addEventListener('mouseleave', stop8); // 押したまま外に出たとき用
+  btn8.addEventListener('touchstart', () => se8.play());
+  btn8.addEventListener('touchend',   stop8);
+</script>
+
+<script>
+ const btn9  = document.getElementById('btn9');
+  const se9   = document.getElementById('se9');
+        se9.playbackRate = (Math.sqrt(1.5))**(3);
+        se9.preservesPitch = false;
+        se9.loop = true;
+
+  // 押した瞬間に再生開始
+  btn9.addEventListener('mousedown', async () => {
+    try {
+      await se9.play();
+    } catch (e) {
+      console.error(e);
+    }
+  });
+
+  // 離したら停止
+  const stop9 = () => {
+    se9.pause();
+    se9.currentTime = 0;
+  };
+  btn9.addEventListener('mouseup', stop9);
+  btn9.addEventListener('mouseleave', stop9); // 押したまま外に出たとき用
+  btn9.addEventListener('touchstart', () => se9.play());
+  btn9.addEventListener('touchend',   stop9);
+</script>
+
+<script>
+ const btn10  = document.getElementById('btn10');
+  const se10   = document.getElementById('se10');
+        se10.playbackRate = (Math.sqrt(1.5))**(4);
+        se10.preservesPitch = false;
+        se10.loop = true;
+
+  // 押した瞬間に再生開始
+  btn10.addEventListener('mousedown', async () => {
+    try {
+      await se10.play();
+    } catch (e) {
+      console.error(e);
+    }
+  });
+
+  // 離したら停止
+  const stop10 = () => {
+    se10.pause();
+    se10.currentTime = 0;
+  };
+  btn10.addEventListener('mouseup', stop10);
+  btn10.addEventListener('mouseleave', stop10); // 押したまま外に出たとき用
+  btn10.addEventListener('touchstart', () => se10.play());
+  btn10.addEventListener('touchend',   stop10);
+</script>
+
+<script>
+ const btn11  = document.getElementById('btn11');
+  const se11   = document.getElementById('se11');
+        se11.playbackRate = (Math.sqrt(1.5))**(5);
+        se11.preservesPitch = false;
+        se11.loop = true;
+
+  // 押した瞬間に再生開始
+  btn11.addEventListener('mousedown', async () => {
+    try {
+      await se11.play();
+    } catch (e) {
+      console.error(e);
+    }
+  });
+
+  // 離したら停止
+  const stop11 = () => {
+    se11.pause();
+    se11.currentTime = 0;
+  };
+  btn11.addEventListener('mouseup', stop11);
+  btn11.addEventListener('mouseleave', stop11); // 押したまま外に出たとき用
+  btn11.addEventListener('touchstart', () => se11.play());
+  btn11.addEventListener('touchend',   stop11);
+</script>
+
+<script>
+ const btn12  = document.getElementById('btn12');
+  const se12   = document.getElementById('se12');
+        se12.playbackRate = (Math.sqrt(1.5))**(6);
+        se12.preservesPitch = false;
+        se12.loop = true;
+
+  // 押した瞬間に再生開始
+  btn12.addEventListener('mousedown', async () => {
+    try {
+      await se12.play();
+    } catch (e) {
+      console.error(e);
+    }
+  });
+
+  // 離したら停止
+  const stop12 = () => {
+    se12.pause();
+    se12.currentTime = 0;
+  };
+  btn12.addEventListener('mouseup', stop12);
+  btn12.addEventListener('mouseleave', stop12); // 押したまま外に出たとき用
+  btn12.addEventListener('touchstart', () => se12.play());
+  btn12.addEventListener('touchend',   stop12);
+</script>
+
+
+
+
+
+
+
+<br><br>
+<button id="btnA0" style="background-color: #d8a;">　　３　</button>
+<button id="btnA1" style="background-color: #db6;">　６．５</button>
+<button id="btnA2" style="background-color: #d8a;">　１０　</button>
+<button id="btnA3" style="background-color: #db6;">　１．５</button>
+<button id="btnA4" style="background-color: #d8a;">　　５　</button>
+<button id="btnA5" style="background-color: #db6;">　８．５</button>
+<button id="btnA6" style="background-color: #ddd;">　　０　</button>
+<button id="btnA7" style="background-color: #db6;">　３．５</button>
+<button id="btnA8" style="background-color: #d8a;">　　７　</button>
+<button id="btnA9" style="background-color: #db6;">１０．５</button>
+<button id="btnA10" style="background-color: #d8a;">　　２　</button>
+<button id="btnA11" style="background-color: #db6;">　５．５</button>
+<button id="btnA12" style="background-color: #d8a;">　　９　</button>
+
+
+<audio id="seA0" src="kukeiha.mp3" loop></audio>
+<audio id="seA1" src="kukeiha.mp3" loop></audio>
+<audio id="seA2" src="kukeiha.mp3" loop></audio>
+<audio id="seA3" src="kukeiha.mp3" loop></audio>
+<audio id="seA4" src="kukeiha.mp3" loop></audio>
+<audio id="seA5" src="kukeiha.mp3" loop></audio>
+<audio id="seA6" src="kukeiha.mp3" loop></audio>
+<audio id="seA7" src="kukeiha.mp3" loop></audio>
+<audio id="seA8" src="kukeiha.mp3" loop></audio>
+<audio id="seA9" src="kukeiha.mp3" loop></audio>
+<audio id="seA10" src="kukeiha.mp3" loop></audio>
+<audio id="seA11" src="kukeiha.mp3" loop></audio>
+<audio id="seA12" src="kukeiha.mp3" loop></audio>
+
+
+
+
+
+
+
+
+
+
+
+<script>
+ const btnA0  = document.getElementById('btnA0');
+  const seA0   = document.getElementById('seA0');
+        seA0.playbackRate = (Math.sqrt(1.5))**(-6)*0.5;
+        seA0.preservesPitch = false;
+        seA0.loop = true;
+
+  // 押した瞬間に再生開始
+  btnA0.addEventListener('mousedown', async () => {
+    try {
+      await seA0.play();
+    } catch (e) {
+      console.error(e);
+    }
+  });
+
+  // 離したら停止
+  const stopA0 = () => {
+    seA0.pause();
+    seA0.currentTime = 0;
+  };
+  btnA0.addEventListener('mouseup', stopA0);
+  btnA0.addEventListener('mouseleave', stopA0); // 押したまま外に出たとき用
+  btnA0.addEventListener('touchstart', () => seA0.play());
+  btnA0.addEventListener('touchend',   stopA0);
+</script>
+
+<script>
+ const btnA1  = document.getElementById('btnA1');
+  const seA1   = document.getElementById('seA1');
+        seA1.playbackRate = (Math.sqrt(1.5))**(-5)*0.5;
+        seA1.preservesPitch = false;
+        seA1.loop = true;
+
+  // 押した瞬間に再生開始
+  btnA1.addEventListener('mousedown', async () => {
+    try {
+      await seA1.play();
+    } catch (e) {
+      console.error(e);
+    }
+  });
+
+  // 離したら停止
+  const stopA1 = () => {
+    seA1.pause();
+    seA1.currentTime = 0;
+  };
+  btnA1.addEventListener('mouseup', stopA1);
+  btnA1.addEventListener('mouseleave', stopA1); // 押したまま外に出たとき用
+  btnA1.addEventListener('touchstart', () => seA1.play());
+  btnA1.addEventListener('touchend',   stopA1);
+</script>
+
+<script>
+ const btnA2  = document.getElementById('btnA2');
+  const seA2   = document.getElementById('seA2');
+        seA2.playbackRate = (Math.sqrt(1.5))**(-4)*0.5;
+        seA2.preservesPitch = false;
+        seA2.loop = true;
+
+  // 押した瞬間に再生開始
+  btnA2.addEventListener('mousedown', async () => {
+    try {
+      await seA2.play();
+    } catch (e) {
+      console.error(e);
+    }
+  });
+
+  // 離したら停止
+  const stopA2 = () => {
+    seA2.pause();
+    seA2.currentTime = 0;
+  };
+  btnA2.addEventListener('mouseup', stopA2);
+  btnA2.addEventListener('mouseleave', stopA2); // 押したまま外に出たとき用
+  btnA2.addEventListener('touchstart', () => seA2.play());
+  btnA2.addEventListener('touchend',   stopA2);
+</script>
+
+<script>
+ const btnA3  = document.getElementById('btnA3');
+  const seA3   = document.getElementById('seA3');
+        seA3.playbackRate = (Math.sqrt(1.5))**(-3)*0.5;
+        seA3.preservesPitch = false;
+        seA3.loop = true;
+
+  // 押した瞬間に再生開始
+  btnA3.addEventListener('mousedown', async () => {
+    try {
+      await seA3.play();
+    } catch (e) {
+      console.error(e);
+    }
+  });
+
+  // 離したら停止
+  const stopA3 = () => {
+    seA3.pause();
+    seA3.currentTime = 0;
+  };
+  btnA3.addEventListener('mouseup', stopA3);
+  btnA3.addEventListener('mouseleave', stopA3); // 押したまま外に出たとき用
+  btnA3.addEventListener('touchstart', () => seA3.play());
+  btnA3.addEventListener('touchend',   stopA3);
+</script>
+
+<script>
+ const btnA4  = document.getElementById('btnA4');
+  const seA4   = document.getElementById('seA4');
+        seA4.playbackRate = (Math.sqrt(1.5))**(-2)*0.5;
+        seA4.preservesPitch = false;
+        seA4.loop = true;
+
+  // 押した瞬間に再生開始
+  btnA4.addEventListener('mousedown', async () => {
+    try {
+      await seA4.play();
+    } catch (e) {
+      console.error(e);
+    }
+  });
+
+  // 離したら停止
+  const stopA4 = () => {
+    seA4.pause();
+    seA4.currentTime = 0;
+  };
+  btnA4.addEventListener('mouseup', stopA4);
+  btnA4.addEventListener('mouseleave', stopA4); // 押したまま外に出たとき用
+  btnA4.addEventListener('touchstart', () => seA4.play());
+  btnA4.addEventListener('touchend',   stopA4);
+</script>
+
+<script>
+ const btnA5  = document.getElementById('btnA5');
+  const seA5   = document.getElementById('seA5');
+        seA5.playbackRate = (Math.sqrt(1.5))**(-1)*0.5;
+        seA5.preservesPitch = false;
+        seA5.loop = true;
+
+  // 押した瞬間に再生開始
+  btnA5.addEventListener('mousedown', async () => {
+    try {
+      await seA5.play();
+    } catch (e) {
+      console.error(e);
+    }
+  });
+
+  // 離したら停止
+  const stopA5 = () => {
+    seA5.pause();
+    seA5.currentTime = 0;
+  };
+  btnA5.addEventListener('mouseup', stopA5);
+  btnA5.addEventListener('mouseleave', stopA5); // 押したまま外に出たとき用
+  btnA5.addEventListener('touchstart', () => seA5.play());
+  btnA5.addEventListener('touchend',   stopA5);
+</script>
+
+<script>
+ const btnA6  = document.getElementById('btnA6');
+  const seA6   = document.getElementById('seA6');
+        seA6.playbackRate = (Math.sqrt(1.5))**(0)*0.5;
+        seA6.preservesPitch = false;
+        seA6.loop = true;
+
+  // 押した瞬間に再生開始
+  btnA6.addEventListener('mousedown', async () => {
+    try {
+      await seA6.play();
+    } catch (e) {
+      console.error(e);
+    }
+  });
+
+  // 離したら停止
+  const stopA6 = () => {
+    seA6.pause();
+    seA6.currentTime = 0;
+  };
+  btnA6.addEventListener('mouseup', stopA6);
+  btnA6.addEventListener('mouseleave', stopA6); // 押したまま外に出たとき用
+  btnA6.addEventListener('touchstart', () => seA6.play());
+  btnA6.addEventListener('touchend',   stopA6);
+</script>
+
+<script>
+ const btnA7  = document.getElementById('btnA7');
+  const seA7   = document.getElementById('seA7');
+        seA7.playbackRate = (Math.sqrt(1.5))**(1)*0.5;
+        seA7.preservesPitch = false;
+        seA7.loop = true;
+
+  // 押した瞬間に再生開始
+  btnA7.addEventListener('mousedown', async () => {
+    try {
+      await seA7.play();
+    } catch (e) {
+      console.error(e);
+    }
+  });
+
+  // 離したら停止
+  const stopA7 = () => {
+    seA7.pause();
+    seA7.currentTime = 0;
+  };
+  btnA7.addEventListener('mouseup', stopA7);
+  btnA7.addEventListener('mouseleave', stopA7); // 押したまま外に出たとき用
+  btnA7.addEventListener('touchstart', () => seA7.play());
+  btnA7.addEventListener('touchend',   stopA7);
+</script>
+
+<script>
+ const btnA8  = document.getElementById('btnA8');
+  const seA8   = document.getElementById('seA8');
+        seA8.playbackRate = (Math.sqrt(1.5))**(2)*0.5;
+        seA8.preservesPitch = false;
+        seA8.loop = true;
+
+  // 押した瞬間に再生開始
+  btnA8.addEventListener('mousedown', async () => {
+    try {
+      await seA8.play();
+    } catch (e) {
+      console.error(e);
+    }
+  });
+
+  // 離したら停止
+  const stopA8 = () => {
+    seA8.pause();
+    seA8.currentTime = 0;
+  };
+  btnA8.addEventListener('mouseup', stopA8);
+  btnA8.addEventListener('mouseleave', stopA8); // 押したまま外に出たとき用
+  btnA8.addEventListener('touchstart', () => seA8.play());
+  btnA8.addEventListener('touchend',   stopA8);
+</script>
+
+<script>
+ const btnA9  = document.getElementById('btnA9');
+  const seA9   = document.getElementById('seA9');
+        seA9.playbackRate = (Math.sqrt(1.5))**(3)*0.5;
+        seA9.preservesPitch = false;
+        seA9.loop = true;
+
+  // 押した瞬間に再生開始
+  btnA9.addEventListener('mousedown', async () => {
+    try {
+      await seA9.play();
+    } catch (e) {
+      console.error(e);
+    }
+  });
+
+  // 離したら停止
+  const stopA9 = () => {
+    seA9.pause();
+    seA9.currentTime = 0;
+  };
+  btnA9.addEventListener('mouseup', stopA9);
+  btnA9.addEventListener('mouseleave', stopA9); // 押したまま外に出たとき用
+  btnA9.addEventListener('touchstart', () => seA9.play());
+  btnA9.addEventListener('touchend',   stopA9);
+</script>
+
+<script>
+ const btnA10  = document.getElementById('btnA10');
+  const seA10   = document.getElementById('seA10');
+        seA10.playbackRate = (Math.sqrt(1.5))**(4)*0.5;
+        seA10.preservesPitch = false;
+        seA10.loop = true;
+
+  // 押した瞬間に再生開始
+  btnA10.addEventListener('mousedown', async () => {
+    try {
+      await seA10.play();
+    } catch (e) {
+      console.error(e);
+    }
+  });
+
+  // 離したら停止
+  const stopA10 = () => {
+    seA10.pause();
+    seA10.currentTime = 0;
+  };
+  btnA10.addEventListener('mouseup', stopA10);
+  btnA10.addEventListener('mouseleave', stopA10); // 押したまま外に出たとき用
+  btnA10.addEventListener('touchstart', () => seA10.play());
+  btnA10.addEventListener('touchend',   stopA10);
+</script>
+
+<script>
+ const btnA11  = document.getElementById('btnA11');
+  const seA11   = document.getElementById('seA11');
+        seA11.playbackRate = (Math.sqrt(1.5))**(5)*0.5;
+        seA11.preservesPitch = false;
+        seA11.loop = true;
+
+  // 押した瞬間に再生開始
+  btnA11.addEventListener('mousedown', async () => {
+    try {
+      await seA11.play();
+    } catch (e) {
+      console.error(e);
+    }
+  });
+
+  // 離したら停止
+  const stopA11 = () => {
+    seA11.pause();
+    seA11.currentTime = 0;
+  };
+  btnA11.addEventListener('mouseup', stopA11);
+  btnA11.addEventListener('mouseleave', stopA11); // 押したまま外に出たとき用
+  btnA11.addEventListener('touchstart', () => seA11.play());
+  btnA11.addEventListener('touchend',   stopA11);
+</script>
+
+<script>
+ const btnA12  = document.getElementById('btnA12');
+  const seA12   = document.getElementById('seA12');
+        seA12.playbackRate = (Math.sqrt(1.5))**(6)*0.5;
+        seA12.preservesPitch = false;
+        seA12.loop = true;
+
+  // 押した瞬間に再生開始
+  btnA12.addEventListener('mousedown', async () => {
+    try {
+      await seA12.play();
+    } catch (e) {
+      console.error(e);
+    }
+  });
+
+  // 離したら停止
+  const stopA12 = () => {
+    seA12.pause();
+    seA12.currentTime = 0;
+  };
+  btnA12.addEventListener('mouseup', stopA12);
+  btnA12.addEventListener('mouseleave', stopA12); // 押したまま外に出たとき用
+  btnA12.addEventListener('touchstart', () => seA12.play());
+  btnA12.addEventListener('touchend',   stopA12);
+</script>
+
+
+
+</body>
+</html>
+
+
+
+
+<!--
+<script>
+ const btnくぁ  = document.getElementById('btnくぁ');
+  const seくぁ   = document.getElementById('seくぁ');
+        seくぁ.playbackRate = (Math.sqrt(1.5))**();
+        seくぁ.preservesPitch = false;
+        seくぁ.loop = true;
+
+  // 押した瞬間に再生開始
+  btnくぁ.addEventListener('mousedown', async () => {
+    try {
+      await seくぁ.play();
+    } catch (e) {
+      console.error(e);
+    }
+  });
+
+  // 離したら停止
+  const stopくぁ = () => {
+    seくぁ.pause();
+    seくぁ.currentTime = 0;
+  };
+  btnくぁ.addEventListener('mouseup', stopくぁ);
+  btnくぁ.addEventListener('mouseleave', stopくぁ); // 押したまま外に出たとき用
+  btnくぁ.addEventListener('touchstart', () => seくぁ.play());
+  btnくぁ.addEventListener('touchend',   stopくぁ);
+</script>
+
+<script>
+ const btnくぃ  = document.getElementById('btnくぃ');
+  const seくぃ   = document.getElementById('seくぃ');
+        seくぃ.playbackRate = (Math.sqrt(1.5))**();
+        seくぃ.preservesPitch = false;
+        seくぃ.loop = true;
+
+  // 押した瞬間に再生開始
+  btnくぃ.addEventListener('mousedown', async () => {
+    try {
+      await seくぃ.play();
+    } catch (e) {
+      console.error(e);
+    }
+  });
+
+  // 離したら停止
+  const stopくぃ = () => {
+    seくぃ.pause();
+    seくぃ.currentTime = 0;
+  };
+  btnくぃ.addEventListener('mouseup', stopくぃ);
+  btnくぃ.addEventListener('mouseleave', stopくぃ); // 押したまま外に出たとき用
+  btnくぃ.addEventListener('touchstart', () => seくぃ.play());
+  btnくぃ.addEventListener('touchend',   stopくぃ);
+</script>
+
+<script>
+ const btnくぇ  = document.getElementById('btnくぇ');
+  const seくぇ   = document.getElementById('seくぇ');
+        seくぇ.playbackRate = (Math.sqrt(1.5))**();
+        seくぇ.preservesPitch = false;
+        seくぇ.loop = true;
+
+  // 押した瞬間に再生開始
+  btnくぇ.addEventListener('mousedown', async () => {
+    try {
+      await seくぇ.play();
+    } catch (e) {
+      console.error(e);
+    }
+  });
+
+  // 離したら停止
+  const stopくぇ = () => {
+    seくぇ.pause();
+    seくぇ.currentTime = 0;
+  };
+  btnくぇ.addEventListener('mouseup', stopくぇ);
+  btnくぇ.addEventListener('mouseleave', stopくぇ); // 押したまま外に出たとき用
+  btnくぇ.addEventListener('touchstart', () => seくぇ.play());
+  btnくぇ.addEventListener('touchend',   stopくぇ);
+</script>
+
+<script>
+ const btnくぉ  = document.getElementById('btnくぉ');
+  const seくぉ   = document.getElementById('seくぉ');
+        seくぉ.playbackRate = (Math.sqrt(1.5))**();
+        seくぉ.preservesPitch = false;
+        seくぉ.loop = true;
+
+  // 押した瞬間に再生開始
+  btnくぉ.addEventListener('mousedown', async () => {
+    try {
+      await seくぉ.play();
+    } catch (e) {
+      console.error(e);
+    }
+  });
+
+  // 離したら停止
+  const stopくぉ = () => {
+    seくぉ.pause();
+    seくぉ.currentTime = 0;
+  };
+  btnくぉ.addEventListener('mouseup', stopくぉ);
+  btnくぉ.addEventListener('mouseleave', stopくぉ); // 押したまま外に出たとき用
+  btnくぉ.addEventListener('touchstart', () => seくぉ.play());
+  btnくぉ.addEventListener('touchend',   stopくぉ);
+</script>
+-->
+
+
+
+
+
+
+
+
+<!--
+
+
+
+
+
+
+<script>
+ const btnAくぁ  = document.getElementById('btnAくぁ');
+  const seAくぁ   = document.getElementById('seAくぁ');
+        seAくぁ.playbackRate = (Math.sqrt(1.5))**()*0.5;
+        seAくぁ.preservesPitch = false;
+        seAくぁ.loop = true;
+
+  // 押した瞬間に再生開始
+  btnAくぁ.addEventListener('mousedown', async () => {
+    try {
+      await seAくぁ.play();
+    } catch (e) {
+      console.error(e);
+    }
+  });
+
+  // 離したら停止
+  const stopAくぁ = () => {
+    seAくぁ.pause();
+    seAくぁ.currentTime = 0;
+  };
+  btnAくぁ.addEventListener('mouseup', stopAくぁ);
+  btnAくぁ.addEventListener('mouseleave', stopAくぁ); // 押したまま外に出たとき用
+  btnAくぁ.addEventListener('touchstart', () => seAくぁ.play());
+  btnAくぁ.addEventListener('touchend',   stopAくぁ);
+</script>
+
+<script>
+ const btnAくぃ  = document.getElementById('btnAくぃ');
+  const seAくぃ   = document.getElementById('seAくぃ');
+        seAくぃ.playbackRate = (Math.sqrt(1.5))**()*0.5;
+        seAくぃ.preservesPitch = false;
+        seAくぃ.loop = true;
+
+  // 押した瞬間に再生開始
+  btnAくぃ.addEventListener('mousedown', async () => {
+    try {
+      await seAくぃ.play();
+    } catch (e) {
+      console.error(e);
+    }
+  });
+
+  // 離したら停止
+  const stopAくぃ = () => {
+    seAくぃ.pause();
+    seAくぃ.currentTime = 0;
+  };
+  btnAくぃ.addEventListener('mouseup', stopAくぃ);
+  btnAくぃ.addEventListener('mouseleave', stopAくぃ); // 押したまま外に出たとき用
+  btnAくぃ.addEventListener('touchstart', () => seAくぃ.play());
+  btnAくぃ.addEventListener('touchend',   stopAくぃ);
+</script>
+
+<script>
+ const btnAくぇ  = document.getElementById('btnAくぇ');
+  const seAくぇ   = document.getElementById('seAくぇ');
+        seAくぇ.playbackRate = (Math.sqrt(1.5))**()*0.5;
+        seAくぇ.preservesPitch = false;
+        seAくぇ.loop = true;
+
+  // 押した瞬間に再生開始
+  btnAくぇ.addEventListener('mousedown', async () => {
+    try {
+      await seAくぇ.play();
+    } catch (e) {
+      console.error(e);
+    }
+  });
+
+  // 離したら停止
+  const stopAくぇ = () => {
+    seAくぇ.pause();
+    seAくぇ.currentTime = 0;
+  };
+  btnAくぇ.addEventListener('mouseup', stopAくぇ);
+  btnAくぇ.addEventListener('mouseleave', stopAくぇ); // 押したまま外に出たとき用
+  btnAくぇ.addEventListener('touchstart', () => seAくぇ.play());
+  btnAくぇ.addEventListener('touchend',   stopAくぇ);
+</script>
+
+<script>
+ const btnAくぉ  = document.getElementById('btnAくぉ');
+  const seAくぉ   = document.getElementById('seAくぉ');
+        seAくぉ.playbackRate = (Math.sqrt(1.5))**()*0.5;
+        seAくぉ.preservesPitch = false;
+        seAくぉ.loop = true;
+
+  // 押した瞬間に再生開始
+  btnAくぉ.addEventListener('mousedown', async () => {
+    try {
+      await seAくぉ.play();
+    } catch (e) {
+      console.error(e);
+    }
+  });
+
+  // 離したら停止
+  const stopAくぉ = () => {
+    seAくぉ.pause();
+    seAくぉ.currentTime = 0;
+  };
+  btnAくぉ.addEventListener('mouseup', stopAくぉ);
+  btnAくぉ.addEventListener('mouseleave', stopAくぉ); // 押したまま外に出たとき用
+  btnAくぉ.addEventListener('touchstart', () => seAくぉ.play());
+  btnAくぉ.addEventListener('touchend',   stopAくぉ);
+</script>
+
+
+
+
+
+
+-->
